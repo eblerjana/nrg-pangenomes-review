@@ -1,0 +1,30 @@
+# path to merged, multi-sample VCF
+merged_set: "/gpfs/project/projects/medbioinf/users/ebler/nrg-pangenome-review/data/hgsvc2/variants_freeze4.vcf.gz"
+
+# TSV file specifying paths to single-sample VCFs
+# format:   <sample>   </path/to/calls.vcf.gz>  </path/to/callable-regions.bed> 
+single_vcfs: "inputs-hgsvc2/hgsvc2-sample-info.tsv"
+
+# TSV file specifying paths to FASTA/Q reads
+# format: <sample>   </path/to/reads.fa>
+reads: "inputs-hgsvc2/reads.tsv"
+
+# reference genome underlying calls
+reference: "inputs-hgsvc2/hg38.no_alt.fa.gz"
+
+# path to yak executable
+yak: "./yak/yak"
+
+
+############################################
+#  Optional arguments
+############################################
+
+# OPTIONAL: precomputed QVs for assemblies
+# format: <H1|H2> <sample-name> <QV value>.
+# If not available, set to: ""
+assembly_qvs: ""
+
+# OPTIONAL: regions to be considered.
+# If not available, set to: {}
+bed: {}
