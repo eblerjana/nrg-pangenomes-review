@@ -1,2 +1,2 @@
-# nrg-pangenomes-review
+# NRG pangenomes review
 Pipelines used for NRG review paper
